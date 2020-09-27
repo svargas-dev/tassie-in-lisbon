@@ -1,0 +1,34 @@
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px dashed blue; */
+}
+
+.form {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid green;*/
+}
+
+.form__input {
+  font-family: "Lora", serif;
+  font-size: 1em;
+  margin: 0.25em 0;
+  padding: 0.25em 0.5em;
+  border: 1px solid grey;
+  border-radius: 0.1em;
+}
+
+@media only screen and (orientation: landscape) {
+  .form {
+    width: 66.666%;
+    max-width: 450px;
+  }
+}
