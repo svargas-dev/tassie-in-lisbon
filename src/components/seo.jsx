@@ -71,13 +71,13 @@ function SEO({ description, lang, meta, title, recaptcha }) {
       ].concat(meta)}
     >
       {/* only load google recaptcha when we need to */}
-      {recaptcha && (
+      {/* {recaptcha && (
         <script
           src="https://www.google.com/recaptcha/api.js"
           async
           defer
         ></script>
-      )}
+      )} */}
     </Helmet>
   );
 }
