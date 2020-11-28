@@ -123,11 +123,11 @@ export default function Contact() {
                 "sans-serif"
               )}
             />
-            {/* <div
+            <div
               style={{ margin: `0.25em auto` }}
               className="g-recaptcha"
               data-sitekey={process.env.GATSBY_RECAPTCHA}
-            ></div> */}
+            ></div>
           </form>
 
           {/* Success / fail messages */}
