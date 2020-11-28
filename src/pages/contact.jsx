@@ -29,7 +29,7 @@ export default function Contact() {
   const classes = useStyles();
 
   const [name, setName] = useState("");
-  const [title, setTitle] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
   const [fail, setFail] = useState(false);
@@ -39,8 +39,8 @@ export default function Contact() {
       case "name":
         setName(e.target.value);
         break;
-      case "title":
-        setTitle(e.target.value);
+      case "email":
+        setEmail(e.target.value);
         break;
       case "message":
         setMessage(e.target.value);
@@ -98,10 +98,10 @@ export default function Contact() {
               onChange={handleOnChange}
             />
             <input
-              name="title"
+              name="email"
               type="email"
               placeholder="Your email..."
-              value={title}
+              value={email}
               className={styles.form__input}
               onChange={handleOnChange}
             />
@@ -126,7 +126,7 @@ export default function Contact() {
             <div
               style={{ margin: `0.25em auto` }}
               className="g-recaptcha"
-              data-sitekey="6LfK4s4ZAAAAAPc9t5n_LKGsDQZ3m91cz9V7dyqc"
+              data-sitekey={process.env.GATSBY_RECAPTCHA}
             ></div>
           </form>
 
