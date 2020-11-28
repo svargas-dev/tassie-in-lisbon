@@ -64,7 +64,7 @@ export default function Contact() {
         (result) => {
           console.log("Success! ", result.status, result.text);
           setName("");
-          setTitle("");
+          setEmail("");
           setMessage("");
 
           setSuccess(true);
